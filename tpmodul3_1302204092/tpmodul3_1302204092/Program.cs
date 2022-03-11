@@ -14,7 +14,18 @@ namespace tpmodul3_1302204092
 
             KodePos.Kelurahan inputKelurahan = KodePos.Kelurahan.Kujangsari;
 
-            Console.WriteLine(kp1.getKodePos(inputKelurahan));
+            Console.WriteLine("Kode Pos: " + kp1.getKodePos(inputKelurahan));
+
+            Console.WriteLine();
+
+            DoorMachine objDoorMach = new DoorMachine();
+            Console.WriteLine("Keadaan awal pintu: " + objDoorMach.StateSaatIni);
+            Console.WriteLine();
+
+            objDoorMach.AksiYangDilakukan(DoorMachine.Aksi.BukaPintu);
+            Console.WriteLine();
+            objDoorMach.AksiYangDilakukan(DoorMachine.Aksi.KunciPintu);
+            Console.WriteLine();
         }
     }
 }
