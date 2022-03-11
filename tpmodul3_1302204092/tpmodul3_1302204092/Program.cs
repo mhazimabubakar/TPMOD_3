@@ -22,9 +22,9 @@ namespace tpmodul3_1302204092
             Console.WriteLine("Keadaan awal pintu: " + objDoorMach.StateSaatIni);
             Console.WriteLine();
 
-            objDoorMach.AksiYangDilakukan(DoorMachine.Aksi.BukaPintu);
-            Console.WriteLine();
             objDoorMach.AksiYangDilakukan(DoorMachine.Aksi.KunciPintu);
+            Console.WriteLine();
+            objDoorMach.AksiYangDilakukan(DoorMachine.Aksi.BukaPintu);
             Console.WriteLine();
         }
     }
